@@ -75,14 +75,6 @@ const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('planos')}
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                >
-                  Planos
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => scrollToSection('contato')}
                   className="text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
