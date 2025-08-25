@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { ArrowRight, Shield, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
-  return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with Gradient */}
       <div className="absolute inset-0 bg-hero-gradient">
         <div className="absolute inset-0 bg-black/10"></div>
@@ -14,9 +11,15 @@ const Hero = () => {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-float"></div>
-        <div className="absolute top-40 right-20 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-20 left-20 w-16 h-16 bg-white/10 rounded-full blur-lg animate-float" style={{animationDelay: '4s'}}></div>
-        <div className="absolute bottom-40 right-10 w-24 h-24 bg-white/5 rounded-full blur-xl animate-float" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-40 right-20 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-float" style={{
+        animationDelay: '2s'
+      }}></div>
+        <div className="absolute bottom-20 left-20 w-16 h-16 bg-white/10 rounded-full blur-lg animate-float" style={{
+        animationDelay: '4s'
+      }}></div>
+        <div className="absolute bottom-40 right-10 w-24 h-24 bg-white/5 rounded-full blur-xl animate-float" style={{
+        animationDelay: '1s'
+      }}></div>
       </div>
 
       <div className="relative z-10 container-custom text-center text-white">
@@ -54,20 +57,13 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
-              size="lg"
-              onClick={() => window.open('https://wa.me/5587999612137', '_blank')}
-              className="bg-white text-primary hover:bg-white/90 px-8 py-4 text-lg font-semibold group"
-            >
+            <Button size="lg" onClick={() => window.open('https://wa.me/5587999612137', '_blank')} className="bg-white text-primary hover:bg-white/90 px-8 py-4 text-lg font-semibold group">
               Solicitar Orçamento
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-4 text-lg font-semibold"
-            >
+            <Button size="lg" variant="outline" onClick={() => document.getElementById('servicos')?.scrollIntoView({
+            behavior: 'smooth'
+          })} className="border-white/30 hover:border-white/50 px-8 py-4 text-lg font-semibold bg-lime-600 hover:bg-lime-500 text-white">
               Conhecer Serviços
             </Button>
           </div>
@@ -80,8 +76,6 @@ const Hero = () => {
           <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
