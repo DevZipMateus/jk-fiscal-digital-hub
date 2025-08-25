@@ -35,8 +35,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-hero-gradient rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg md:text-xl">JK</span>
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/6a7ad79d-0b52-4a8c-b9b3-23f64d58dffa.png" 
+                alt="JK Automação Fiscal & Suporte Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <h1 className="font-heading font-bold text-lg md:text-xl text-foreground">
