@@ -13,8 +13,8 @@ const Hero = () => {
           alt="Tecnologia Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="absolute inset-0 bg-hero-gradient opacity-60"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-hero-gradient opacity-40"></div>
       </div>
       
       {/* Animated Background Elements */}
