@@ -45,7 +45,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
             <h3 className="font-heading font-semibold text-2xl mb-6 text-foreground">
@@ -150,25 +150,6 @@ const Contact = () => {
                   </Button>
                 </div>
               </Card>
-            </div>
-          </div>
-        </div>
-
-        {/* Map Section */}
-        <div className="bg-card rounded-2xl p-8 border border-border/50 shadow-sm">
-          <h3 className="font-heading font-semibold text-2xl mb-6 text-center text-foreground">
-            Nossa Localização
-          </h3>
-          <div className="aspect-video w-full bg-muted rounded-xl flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="w-12 h-12 mx-auto mb-4 text-primary" />
-              <p className="text-lg font-semibold text-foreground mb-2">Rua Projetada dois 30</p>
-              <Button 
-                onClick={() => window.open('https://maps.google.com/?q=Rua Projetada dois 30', '_blank')}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground"
-              >
-                Ver no Google Maps
-              </Button>
             </div>
           </div>
         </div>
