@@ -69,11 +69,13 @@
   }
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden; /* Prevent horizontal scroll */
   }
   
   /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scroll */
   }
 
   /* Custom scrollbar */
@@ -136,11 +138,11 @@
 
   /* Section Spacing */
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-12 sm:py-16 md:py-20 lg:py-24;
   }
   
   .container-custom {
-    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
   }
 
   /* Text Gradients */
@@ -149,6 +151,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  /* Responsive text handling */
+  .text-responsive {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 }
 
@@ -176,5 +185,35 @@
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+  }
+
+  /* Prevent text overflow */
+  .text-ellipsis-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .text-ellipsis-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 640px) {
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }

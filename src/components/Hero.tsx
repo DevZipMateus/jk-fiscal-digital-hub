@@ -31,58 +31,67 @@ const Hero = () => {
         }}></div>
       </div>
 
-      <div className="relative z-10 container-custom text-center text-white">
-        <div className="max-w-4xl mx-auto animate-fade-in-up">
+      <div className="relative z-10 container-custom text-center text-white px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto animate-fade-in-up">
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
-            <Award className="w-4 h-4 mr-2" />
-            <span className="text-sm font-medium">18 Anos de Experiência</span>
+          <div className="inline-flex items-center px-3 sm:px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 sm:mb-6">
+            <Award className="w-3 h-3 sm:w-4 sm:h-4 mr-2 flex-shrink-0" />
+            <span className="text-xs sm:text-sm font-medium whitespace-nowrap">18 Anos de Experiência</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-7xl mb-6 leading-tight">
+          <h1 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 leading-tight">
             <span className="block">Automação Fiscal</span>
             <span className="block text-white/90">& Suporte Especializado</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
             Soluções completas em sistemas fiscais empresariais, rede lógica e suporte técnico 
             com a confiança de quem está no mercado há mais de 18 anos.
           </p>
 
           {/* Stats */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-10 px-4">
             <div className="flex items-center space-x-2">
-              <Shield className="w-6 h-6 text-white/80" />
-              <span className="text-lg font-semibold">Suporte Especializado</span>
+              <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-white/80 flex-shrink-0" />
+              <span className="text-sm sm:text-base lg:text-lg font-semibold whitespace-nowrap">Suporte Especializado</span>
             </div>
-            <div className="hidden sm:block w-px h-8 bg-white/30"></div>
+            <div className="hidden sm:block w-px h-6 lg:h-8 bg-white/30"></div>
             <div className="flex items-center space-x-2">
-              <Users className="w-6 h-6 text-white/80" />
-              <span className="text-lg font-semibold">Atendimento Personalizado</span>
+              <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white/80 flex-shrink-0" />
+              <span className="text-sm sm:text-base lg:text-lg font-semibold whitespace-nowrap">Atendimento Personalizado</span>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" onClick={() => window.open('https://wa.me/5587999612137', '_blank')} className="bg-white text-primary hover:bg-white/90 px-8 py-4 text-lg font-semibold group">
-              Solicitar Orçamento
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
+            <Button 
+              size="lg" 
+              onClick={() => window.open('https://wa.me/5587999612137', '_blank')} 
+              className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold group"
+            >
+              <span className="whitespace-nowrap">Solicitar Orçamento</span>
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </Button>
-            <Button size="lg" variant="outline" onClick={() => document.getElementById('servicos')?.scrollIntoView({
-              behavior: 'smooth'
-            })} className="border-white/30 hover:border-white/50 px-8 py-4 text-lg font-semibold bg-lime-600 hover:bg-lime-500 text-white">
-              Conhecer Serviços
+            <Button 
+              size="lg" 
+              variant="outline" 
+              onClick={() => document.getElementById('servicos')?.scrollIntoView({
+                behavior: 'smooth'
+              })} 
+              className="w-full sm:w-auto border-white/30 hover:border-white/50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold bg-lime-600 hover:bg-lime-500 text-white"
+            >
+              <span className="whitespace-nowrap">Conhecer Serviços</span>
             </Button>
           </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/30 rounded-full flex justify-center">
+          <div className="w-1 h-2 sm:h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

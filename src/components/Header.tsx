@@ -32,63 +32,63 @@ const Header = () => {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden">
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg overflow-hidden flex-shrink-0">
               <img 
                 src="/lovable-uploads/6a7ad79d-0b52-4a8c-b9b3-23f64d58dffa.png" 
                 alt="JK Automação Fiscal & Suporte Logo" 
                 className="w-full h-full object-contain"
               />
             </div>
-            <div>
-              <h1 className="font-heading font-bold text-lg md:text-xl text-foreground">
+            <div className="min-w-0">
+              <h1 className="font-heading font-bold text-sm sm:text-lg md:text-xl text-foreground truncate">
                 JK AUTOMAÇÃO
               </h1>
-              <p className="text-xs md:text-sm text-muted-foreground -mt-1">
+              <p className="text-xs md:text-sm text-muted-foreground -mt-1 truncate">
                 FISCAL & SUPORTE
               </p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <button 
               onClick={() => scrollToSection('inicio')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium whitespace-nowrap"
             >
               Início
             </button>
             <button 
               onClick={() => scrollToSection('sobre')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium whitespace-nowrap"
             >
               Sobre
             </button>
             <button 
               onClick={() => scrollToSection('servicos')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium whitespace-nowrap"
             >
               Serviços
             </button>
             <button 
               onClick={() => scrollToSection('contato')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium whitespace-nowrap"
             >
               Contato
             </button>
           </nav>
 
           {/* Contact Info & CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden xl:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <Phone className="w-4 h-4" />
-              <span>(87) 99961-2137</span>
+              <Phone className="w-4 h-4 flex-shrink-0" />
+              <span className="whitespace-nowrap">(87) 99961-2137</span>
             </div>
             <Button 
               onClick={() => window.open('https://wa.me/5587999612137', '_blank')}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground whitespace-nowrap"
             >
               Fale Conosco
             </Button>
@@ -98,10 +98,10 @@ const Header = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="lg:hidden"
+            className="lg:hidden flex-shrink-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
           </Button>
         </div>
       </div>
@@ -137,7 +137,7 @@ const Header = () => {
               </button>
               <div className="pt-4 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4 flex-shrink-0" />
                   <span>(87) 99961-2137</span>
                 </div>
                 <Button 
