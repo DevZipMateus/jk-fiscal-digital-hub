@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="bg-black border-t border-gray-800">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
@@ -25,34 +25,34 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-lg text-foreground">
+                <h3 className="font-heading font-bold text-lg text-white">
                   JK AUTOMAÇÃO
                 </h3>
-                <p className="text-sm text-muted-foreground -mt-1">
+                <p className="text-sm text-gray-300 -mt-1">
                   FISCAL & SUPORTE
                 </p>
               </div>
             </div>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+            <p className="text-gray-300 text-sm leading-relaxed mb-4">
               Mais de 18 anos oferecendo soluções especializadas em automação fiscal, 
               suporte técnico e equipamentos de informática.
             </p>
-            <div className="text-sm text-muted-foreground">
-              <p className="font-semibold text-foreground">CNPJ:</p>
+            <div className="text-sm text-gray-300">
+              <p className="font-semibold text-white">CNPJ:</p>
               <p>31.443.495/0001-57</p>
             </div>
           </div>
 
           {/* Navigation */}
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-4 text-foreground">
+            <h4 className="font-heading font-semibold text-lg mb-4 text-white">
               Navegação
             </h4>
             <ul className="space-y-2">
               <li>
                 <button 
                   onClick={() => scrollToSection('inicio')}
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                  className="text-gray-300 hover:text-primary transition-colors text-sm"
                 >
                   Início
                 </button>
@@ -60,7 +60,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('sobre')}
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                  className="text-gray-300 hover:text-primary transition-colors text-sm"
                 >
                   Sobre
                 </button>
@@ -68,7 +68,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('servicos')}
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                  className="text-gray-300 hover:text-primary transition-colors text-sm"
                 >
                   Serviços
                 </button>
@@ -76,7 +76,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('contato')}
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                  className="text-gray-300 hover:text-primary transition-colors text-sm"
                 >
                   Contato
                 </button>
@@ -86,10 +86,10 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-4 text-foreground">
+            <h4 className="font-heading font-semibold text-lg mb-4 text-white">
               Serviços
             </h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-sm text-gray-300">
               <li>Sistema Fiscal Empresarial</li>
               <li>Treinamentos Especializados</li>
               <li>Rede Lógica</li>
@@ -101,33 +101,33 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-4 text-foreground">
+            <h4 className="font-heading font-semibold text-lg mb-4 text-white">
               Contato
             </h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">(87) 99961-2137</span>
+                <span className="text-sm text-gray-300">(87) 99961-2137</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">jacson-25@hotmail.com</span>
+                <span className="text-sm text-gray-300">jacson-25@hotmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-sm text-muted-foreground">Rua Projetada dois 30</span>
+                <span className="text-sm text-gray-300">Rua Projetada dois 30</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-border pt-8">
+        <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-muted-foreground text-center md:text-left">
+            <p className="text-sm text-gray-300 text-center md:text-left">
               © {new Date().getFullYear()} JK Automação Fiscal & Suporte. Todos os direitos reservados.
             </p>
-            <p className="text-sm text-muted-foreground text-center md:text-right">
+            <p className="text-sm text-gray-300 text-center md:text-right">
               Desenvolvido com tecnologia e dedicação
             </p>
           </div>
