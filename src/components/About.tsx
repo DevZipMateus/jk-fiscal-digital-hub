@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Shield, Award, Users, Zap } from 'lucide-react';
 import { Card } from '@/components/ui/card';
@@ -93,8 +92,16 @@ const About = () => {
               </div>
             </div>
             <div className="relative order-1 lg:order-2">
-              <div className="aspect-square w-full max-w-sm mx-auto lg:max-w-none bg-hero-gradient rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/10"></div>
+              <div 
+                className="aspect-square w-full max-w-sm mx-auto lg:max-w-none rounded-2xl flex items-center justify-center relative overflow-hidden"
+                style={{
+                  backgroundImage: `url('/lovable-uploads/54abaaa8-51b8-4908-90d2-c9fc89292986.png')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-overlay"></div>
                 <div className="text-center text-white z-10 px-4 py-8">
                   <div className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold mb-2">18+</div>
                   <div className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-medium">Anos de</div>
