@@ -61,7 +61,7 @@ const About = () => {
         </div>
 
         <div className="bg-card rounded-2xl p-6 sm:p-8 md:p-12 shadow-sm border border-border/50">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h3 className="font-heading font-bold text-xl sm:text-2xl md:text-3xl mb-4 sm:mb-6 text-foreground">
                 Nossa Missão
@@ -93,17 +93,19 @@ const About = () => {
               </div>
             </div>
             <div className="relative order-1 lg:order-2">
-              <div className="aspect-square bg-hero-gradient rounded-2xl flex items-center justify-center relative overflow-hidden">
+              <div className="aspect-square w-full max-w-sm mx-auto lg:max-w-none bg-hero-gradient rounded-2xl flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
-                <div className="text-center text-white z-10 px-4">
-                  <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-1 sm:mb-2">18+</div>
-                  <div className="text-sm sm:text-base md:text-lg lg:text-xl font-medium">Anos de</div>
-                  <div className="text-sm sm:text-base md:text-lg lg:text-xl font-medium">Experiência</div>
+                <div className="text-center text-white z-10 px-4 py-8">
+                  <div className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold mb-2">18+</div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-medium">Anos de</div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-medium">Experiência</div>
                 </div>
                 {/* Decorative elements */}
                 <div className="absolute top-4 right-4 w-6 h-6 sm:w-8 sm:h-8 bg-white/10 rounded-full"></div>
                 <div className="absolute bottom-4 left-4 w-4 h-4 sm:w-6 sm:h-6 bg-white/10 rounded-full"></div>
                 <div className="absolute top-1/2 left-4 w-3 h-3 sm:w-4 sm:h-4 bg-white/10 rounded-full"></div>
+                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-2 h-2 sm:w-3 sm:h-3 bg-white/10 rounded-full"></div>
+                <div className="absolute bottom-8 right-8 w-3 h-3 sm:w-4 sm:h-4 bg-white/10 rounded-full"></div>
               </div>
             </div>
           </div>
